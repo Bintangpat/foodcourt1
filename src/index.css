@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --spacing: 1px;
+
+  --shadow-fixed: 0 0 3px rgba(0, 0, 0, 0.25);
+
+  --font-Intertight: "Inter Tight", sans-serif;
+
+  --animate-fade-in-up: fade-in-up 1s ease-out;
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+      -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.bodybase {
+  width: screen;
+  height: fit-content;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
