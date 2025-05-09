@@ -3,7 +3,7 @@ const ProductImage = ({ imageSrc }) => {
     <div className="h-[15rem] w-full">
       <img
         alt="Product"
-        className="h-full w-full rounded-xl object-cover border-2 border-amber-950"
+        className="h-full w-full rounded-xl border-2 border-amber-950 object-cover"
         height="100px"
         src={imageSrc}
         width="100px"
